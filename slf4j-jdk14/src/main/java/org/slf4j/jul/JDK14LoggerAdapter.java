@@ -57,6 +57,11 @@ public final class JDK14LoggerAdapter extends LegacyAbstractLogger implements Lo
 
     static int NOT_FOUND = -1;
 
+    static
+    {
+        System.err.println("SYN-9181: custom JDK14LoggerAdapter loaded");
+    }
+
     // WARN: JDK14LoggerAdapter constructor should have only package access so
     // that only JDK14LoggerFactory be able to create one.
     JDK14LoggerAdapter(java.util.logging.Logger logger) {
