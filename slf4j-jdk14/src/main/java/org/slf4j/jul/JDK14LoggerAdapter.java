@@ -161,7 +161,7 @@ public final class JDK14LoggerAdapter extends LegacyAbstractLogger implements Lo
         // See also https://jira.qos.ch/browse/SLF4J-10
 
         // SYN-9181: We have to comment out this call because this call slows logging down significantly (almost by a factor of four)
-         fillCallerData(fqcn, record);
+        // fillCallerData(fqcn, record);
         logger.log(record);
     }
 
